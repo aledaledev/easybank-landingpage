@@ -3,7 +3,8 @@ import React from 'react'
 const Header = ({open,setOpen}) => {
 
   return (
-    <header className="relative px-7 flex place-content-between items-center h-16 bg-white">
+    <header className="relative h-16 bg-white z-50">
+      <div className='flex place-content-between items-center max-w-sm h-full mx-auto md:max-w-3xl lg:max-w-5xl '>
         <span>
             <img src="./assets/icons/logo.svg" alt="easybank-logo" />
         </span>
@@ -22,6 +23,7 @@ const Header = ({open,setOpen}) => {
         <button className="button hidden md:block">
           request invite
         </button>
+      </div>
     </header>
   )
 }

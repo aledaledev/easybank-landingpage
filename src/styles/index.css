@@ -4,6 +4,7 @@
 @tailwind utilities;
 @layer base {
   body {
+    overflow-x: hidden;
     @apply font-custom;
   }
 }
@@ -17,12 +18,16 @@
   font-size: .8rem;
 }
 .button{
-  @apply text-very-light-gray bg-gradient-to-r from-lime-green to-bringht-cyan rounded-3xl py-3 px-9 capitalize font-bold text-sm
+  @apply text-very-light-gray bg-gradient-to-r from-lime-green to-bringht-cyan rounded-3xl py-3 px-9 capitalize font-bold text-sm duration-200 hover:opacity-80
 }
 .menu-nav-a{
-  @apply text-sm text-grayish-blue hover:text-dark-blue after:content-[''] after:w-full after:h-1 after:block after:relative after:-bottom-5 after:bg-none hover:after:bg-gradient-to-r from-lime-green to-bringht-cyan
+  @apply text-sm text-grayish-blue duration-200 hover:text-dark-blue after:content-[''] after:w-full after:h-1 after:block after:relative after:-bottom-5 after:bg-none hover:after:bg-gradient-to-r from-lime-green to-bringht-cyan
 }
 .body-blocked{
   height: 100%;
   overflow-y: hidden;
+}
+.filter-green:hover{
+  cursor:pointer;
+  filter: invert(34%) sepia(100%) saturate(364%) hue-rotate(79deg) brightness(89%) contrast(91%);
 }
